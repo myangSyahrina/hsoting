@@ -1,0 +1,311 @@
+
+
+* {
+	padding:0;
+	margin:0;
+	font-family: 'Quicksand', sans-serif;
+	color: #333;
+}
+header {
+	height:70px;
+}
+header h1 {
+	display: inline-block;
+	float: left;
+	padding:15px 24px;
+	text-transform: uppercase;
+}
+header h1 a {
+	transition: .3s;
+}
+header h1 a:hover {
+	color: rgb(255, 0, 64);
+}
+header ul {
+	float: right;
+}
+header ul li {
+	padding:24px;
+	display: inline-block;
+}
+header ul li a {
+	transition: .3s;
+}
+header ul li a:hover {
+	color: rgb(255, 0, 64);
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width:90%;
+	margin:0 auto;
+}
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.mobile-menu {
+	float: right;
+	display: none;
+	padding:18px;
+}
+.mobile-menu:hover {
+	cursor: pointer;
+}
+#check {
+	display: none;
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width:300px;
+	background-color: rgb(255, 0, 64);
+	transition: .3s;
+	z-index: 9999;
+}
+.sidebar ul li a {
+	color: #fff;
+}
+.sidebar ul li {
+	padding:24px;
+	transition: .3s;
+	transition-property: background-color;
+}
+.sidebar ul li:hover {
+	background-color: rgb(255, 0, 64);
+}
+#check:checked ~ .sidebar {
+	left: 0;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url("img/WhatsApp\ Image\ 2023-05-23\ at\ 19.22.45.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .home .home-content{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home .text-one{
+    font-size: 25px;
+    color: #fff;
+  }
+  .home .text-two{
+    color: #fff;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  .home .text-three{
+    font-size: 40px;
+    margin: 5px 0;
+    color: #fff;
+  }
+  .home .text-four{
+    font-size: 23px;
+    margin: 5px 0;
+    color: #fff;
+  }
+  .home .button{
+    margin: 14px 0;
+  }
+  .home .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: rgb(255, 0, 64);
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+  }
+  .home .button button:hover{
+    border-color: rgb(255, 0, 64);
+    background-color: #fff;
+    color: rgb(255, 0, 64);
+  }
+  
+  section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+}
+section h3::before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	width:120px;
+	height:1px;
+	background-color: #ddd;
+	left: calc(50% - 60px);
+}
+section h3::after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom: -1px;
+	width:40px;
+	height:4px;
+	background-color: #F84744;
+	left: calc(50% - 20px);
+}
+#about p {
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+#skills,
+#contact {
+	background-color: #f9f9f9;
+}
+#skills .bar {
+	height: 30px;
+	background-color: #fff;
+	border:1px solid #ddd;
+	margin: 5px 0 20px 0;
+}
+.bar .nilai {
+	height:30px;
+	background-color: rgb(255, 0, 64);
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+}
+.html {
+	width:60%;
+}
+.css {
+	width:45%;
+}
+.js {
+	width:20%;
+}
+.portfolio .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+.portfolio .box-container .box {
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio .box-container .box:hover img {
+    transform: scale(1.2);
+}
+
+.contact{
+    background: #F0F8FF;
+  }
+  .contact .content{
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  .contact .text{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+  section .button{
+    margin: 16px 0;
+  }
+  section .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: rgb(255, 0, 64);
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  section .button button:hover{
+    border-color: rgb(255, 0, 64);
+    background-color: #fff;
+    color: rgb(255, 0, 64);
+  }
+  section  .topic{
+    color: #0E2431;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+
+
+  footer{
+	background: rgb(255, 0, 64);
+	padding: 15px 0;
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+  }
+  footer .text span{
+	font-size: 17px;
+	font-weight: 400;
+	color: #0E2431;
+  }
+  footer .text span a{
+	font-weight: 500;
+	color: black;
+  }
+  footer .text span a:hover{
+	text-decoration: underline;
+  }
+  
+  .scroll-button a{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	color: #fff;
+	background: rgb(255, 0, 64);
+	padding: 7px 12px;;
+	font-size: 18px;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.15);
+	display: none;
+  }
+
+
+@media (max-width: 768px){
+	.mobile-menu {
+		display: block;
+	}
+	header ul {
+		display: none;
+	}
+	.col-4 {
+		width:50%;
+	}
+	.col-3 {
+		width:100%;
+	}
+}
